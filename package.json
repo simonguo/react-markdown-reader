@@ -1,8 +1,8 @@
 {
   "name": "markdownloader",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "markdown loader for webpack",
-  "main": "bin/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib ",
     "test": "echo \"Error: no test specified\" && exit 1"

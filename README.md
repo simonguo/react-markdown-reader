@@ -11,6 +11,14 @@ const markdownLoader = require('markdownloader');
 
 module.exports={
     ...
+    module: {
+        [{
+            test: /\.md$/,
+            loader: 'html!markdown'
+        },
+        ...
+        ]
+    },
     markdownLoader
 }
 ```
@@ -28,4 +36,8 @@ import 'markdownloader/less/highlight.less'
 
 
 ```
+
+## dependency
+
+- markdown-loader
 
