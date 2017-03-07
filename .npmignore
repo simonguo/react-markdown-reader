@@ -1,0 +1,9 @@
+test/
+src/
+dev/
+dist/
+.vscode/
+examples/
+assets
+karma*
+.idea/

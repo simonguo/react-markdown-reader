@@ -15,6 +15,6 @@ const codeRenderer = function (code, lang) {
 
 renderer.code = codeRenderer;
 
-module.exports = {
+export default {
     renderer: renderer
 };
