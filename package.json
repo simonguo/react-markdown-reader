@@ -1,0 +1,28 @@
+{
+  "name": "markdownloader",
+  "version": "1.0.0",
+  "description": "markdown loader for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonguo/markdownLoader.git"
+  },
+  "keywords": [
+    "webpack",
+    "mackdown"
+  ],
+  "author": "simonguo.2009@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonguo/markdownLoader/issues"
+  },
+  "homepage": "https://github.com/simonguo/markdownLoader#readme",
+  "dependencies": {
+    "marked": "^0.3.5",
+    "highlight.js": "^9.4.0"
+  }
+}
+
