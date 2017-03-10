@@ -1,12 +1,21 @@
 # markdownloader
 
+## Install
+
+```
+npm install html-loader@0.4.5 --save-dev
+npm install markdown-loader@0.1.7 --save-dev
+npm install markdownloader --save-dev
+```
+
+
 ## Usage
 
 
 `webpack.config.js`
 
 ```js
-const markdownLoader = require('markdownloader');
+const markdownLoader = require('markdownloader').renderer;
 
 
 module.exports={
@@ -39,5 +48,6 @@ import 'markdownloader/less/highlight.less'
 
 ## dependency
 
-- markdown-loader
+- markdown-loader@0.1.7
+- html-loader@0.4.5
 
