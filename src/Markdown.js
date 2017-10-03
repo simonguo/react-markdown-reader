@@ -1,17 +1,22 @@
-const React = require('react');
-const Markdown = React.createClass({
-    createMarkup: function () {
-        return { __html: this.props.children };
-    },
-    render: function () {
+import React from 'react';
 
-        return (
-            <div
-                dangerouslySetInnerHTML={this.createMarkup() }
-                className={this.props.className || 'markdown'}
-                />
-        );
-    }
-});
+class Markdown extends React.Component {
+  constructor() {
+    super()
+    this.createMarkup = this.createMarkup.bind(this);
+  }
+  createMarkup() {
+    return { __html: this.props.children };
+  }
+  render() {
+    return (
+      <div
+        dangerouslySetInnerHTML={this.createMarkup()}
+        className={this.props.className || 'markdown'}
+      />
+    );
+  }
+}
+
 
 export default Markdown;

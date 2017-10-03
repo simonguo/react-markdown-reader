@@ -1,6 +1,6 @@
 {
   "name": "markdownloader",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "markdown loader for webpack",
   "main": "lib/index.js",
   "scripts": {
@@ -25,6 +25,9 @@
     "marked": "^0.3.5",
     "highlight.js": "^9.4.0"
   },
+  "peerDependencies": {
+    "react": "^0.14.9 || >=15.3.0"
+  },
   "devDependencies": {
     "babel-core": "^6.7.6",
     "babel-eslint": "^6.1.2",
@@ -34,4 +37,3 @@
     "babel-preset-stage-0": "^6.5.0"
   }
 }
-
