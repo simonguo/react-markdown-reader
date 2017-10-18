@@ -14,10 +14,10 @@ npm install markdownloader --save-dev
 
 `webpack.config.js`
 
+**webpack 1.x**
+
 ```js
 const markdownLoader = require('markdownloader').renderer;
-
-
 module.exports={
     ...
     module: {
@@ -32,6 +32,23 @@ module.exports={
 }
 ```
 
+**webpack 2.x +**
+
+```js
+{
+  test: /\.md$/,
+  use: [{
+    loader: 'html-loader'
+  }, {
+    loader: 'markdown-loader',
+    options: {
+      pedantic: true,
+      renderer: markdownLoader.renderer
+    }
+  }]
+}
+```
+
 Exmaple
 
 ```js
@@ -42,7 +59,6 @@ import 'markdownloader/less/highlight.less'
 <Markdown>
     {require('./README.md')}
 </Markdown>
-
 
 ```
 

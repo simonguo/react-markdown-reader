@@ -1,7 +1,7 @@
 {
-  "name": "markdownloader",
-  "version": "1.0.6",
-  "description": "markdown loader for webpack",
+  "name": "react-markdown-reader",
+  "version": "1.0.0",
+  "description": "markdown reader",
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib ",
@@ -9,18 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simonguo/markdownLoader.git"
+    "url": "git+https://github.com/simonguo/react-markdown-reader.git"
   },
   "keywords": [
+    "react",
     "webpack",
     "mackdown"
   ],
   "author": "simonguo.2009@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simonguo/markdownLoader/issues"
+    "url": "https://github.com/simonguo/react-markdown-reader/issues"
   },
-  "homepage": "https://github.com/simonguo/markdownLoader#readme",
+  "homepage": "https://github.com/simonguo/react-markdown-reader#readme",
   "dependencies": {
     "marked": "^0.3.5",
     "highlight.js": "^9.4.0"
