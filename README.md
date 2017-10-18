@@ -1,40 +1,25 @@
-# markdownloader
+# react-markdown-reader
 
 ## Install
 
 ```
-npm install html-loader@0.4.5 --save-dev
-npm install markdown-loader@0.1.7 --save-dev
-npm install markdownloader --save-dev
+npm install html-loader --save-dev
+npm install markdown-loader --save-dev
+npm install react-markdown-reader --save-dev
 ```
-
 
 ## Usage
 
 
 `webpack.config.js`
 
-**webpack 1.x**
-
-```js
-const markdownLoader = require('markdownloader').renderer;
-module.exports={
-    ...
-    module: {
-        [{
-            test: /\.md$/,
-            loader: 'html!markdown'
-        },
-        ...
-        ]
-    },
-    markdownLoader
-}
-```
-
 **webpack 2.x +**
 
+
 ```js
+
+const markdownReader = require('react-markdown-reader');
+
 {
   test: /\.md$/,
   use: [{
@@ -43,7 +28,7 @@ module.exports={
     loader: 'markdown-loader',
     options: {
       pedantic: true,
-      renderer: markdownLoader.renderer
+      renderer: markdownReader.renderer
     }
   }]
 }
@@ -52,7 +37,7 @@ module.exports={
 Exmaple
 
 ```js
-import { Markdown } from 'markdownloader';
+import { Markdown } from 'react-markdown-reader';
 import 'markdownloader/less/highlight.less'
 
 
@@ -61,9 +46,3 @@ import 'markdownloader/less/highlight.less'
 </Markdown>
 
 ```
-
-## dependency
-
-- markdown-loader@0.1.7
-- html-loader@0.4.5
-
