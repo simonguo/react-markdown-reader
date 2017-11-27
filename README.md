@@ -18,7 +18,7 @@ npm install react-markdown-reader --save-dev
 
 ```js
 
-const markdownReader = require('react-markdown-reader');
+const markdownRenderer = require('react-markdown-reader').renderer;
 
 {
   test: /\.md$/,
@@ -28,7 +28,7 @@ const markdownReader = require('react-markdown-reader');
     loader: 'markdown-loader',
     options: {
       pedantic: true,
-      renderer: markdownReader.renderer
+      renderer: markdownRenderer
     }
   }]
 }

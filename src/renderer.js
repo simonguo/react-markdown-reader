@@ -15,6 +15,4 @@ const codeRenderer = function (code, lang) {
 
 renderer.code = codeRenderer;
 
-export default {
-  renderer
-};
+export default renderer;
