@@ -1,6 +1,6 @@
 {
   "name": "react-markdown-reader",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "markdown reader",
   "main": "lib/index.js",
   "scripts": {
@@ -11,11 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/simonguo/react-markdown-reader.git"
   },
-  "keywords": [
-    "react",
-    "webpack",
-    "mackdown"
-  ],
+  "keywords": ["react", "webpack", "mackdown"],
   "author": "simonguo.2009@gmail.com",
   "license": "MIT",
   "bugs": {
