@@ -10,14 +10,11 @@ npm install react-markdown-reader --save-dev
 
 ## Usage
 
-
 `webpack.config.js`
 
-**webpack 2.x +**
-
+**webpack >= 2**
 
 ```js
-
 const markdownRenderer = require('react-markdown-reader').renderer;
 
 {
@@ -28,10 +25,16 @@ const markdownRenderer = require('react-markdown-reader').renderer;
     loader: 'markdown-loader',
     options: {
       pedantic: true,
-      renderer: markdownRenderer
+      renderer: markdownRenderer(/**languages[string]**/)
     }
   }]
 }
+```
+
+注意： markdownRenderer 参数 languages，是为了按需加载，解决加载所有的语言包文件过大的问题。默认值:
+
+```js
+["javascript", "bash", "xml", "css", "markdown", "less"];
 ```
 
 Exmaple
@@ -44,5 +47,4 @@ import 'markdownloader/less/highlight.less'
 <Markdown>
     {require('./README.md')}
 </Markdown>
-
 ```
