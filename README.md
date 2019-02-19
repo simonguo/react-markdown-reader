@@ -41,7 +41,7 @@ Exmaple
 
 ```js
 import { Markdown } from 'react-markdown-reader';
-import 'markdownloader/less/highlight.less'
+import 'react-markdown-reader/less/highlight.less'
 
 
 <Markdown>
