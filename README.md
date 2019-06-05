@@ -24,7 +24,6 @@ const markdownRenderer = require('react-markdown-reader').renderer;
   }, {
     loader: 'markdown-loader',
     options: {
-      pedantic: true,
       renderer: markdownRenderer(/**languages[string]**/)
     }
   }]
@@ -34,17 +33,14 @@ const markdownRenderer = require('react-markdown-reader').renderer;
 注意： markdownRenderer 参数 languages，是为了按需加载，解决加载所有的语言包文件过大的问题。默认值:
 
 ```js
-["javascript", "bash", "xml", "css", "markdown", "less"];
+['javascript', 'bash', 'xml', 'css', 'markdown', 'less'];
 ```
 
 Exmaple
 
 ```js
 import { Markdown } from 'react-markdown-reader';
-import 'react-markdown-reader/less/highlight.less'
+import 'react-markdown-reader/less/highlight.less';
 
-
-<Markdown>
-    {require('./README.md')}
-</Markdown>
+<Markdown>{require('./README.md')}</Markdown>;
 ```
