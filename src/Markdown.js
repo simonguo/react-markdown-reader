@@ -2,7 +2,7 @@ import React from 'react';
 
 class Markdown extends React.Component {
   constructor() {
-    super()
+    super();
     this.createMarkup = this.createMarkup.bind(this);
   }
   createMarkup() {
@@ -17,6 +17,5 @@ class Markdown extends React.Component {
     );
   }
 }
-
 
 export default Markdown;

@@ -1,13 +1,6 @@
-const marked = require("marked");
-const hl = require("highlight.js/lib/highlight");
-const defalutLanguages = [
-  "javascript",
-  "bash",
-  "xml",
-  "css",
-  "markdown",
-  "less"
-];
+const marked = require('marked');
+const hl = require('highlight.js/lib/highlight');
+const defalutLanguages = ['javascript', 'bash', 'xml', 'css', 'markdown', 'less'];
 
 export default (languages = defalutLanguages) => {
   languages.forEach(langName => {
@@ -17,16 +10,14 @@ export default (languages = defalutLanguages) => {
 
   const renderer = new marked.Renderer();
   const codeRenderer = function(code, lang) {
-    lang = lang === "js" ? "javascript" : lang;
-    if (lang === "html") {
-      lang = "xml";
+    lang = lang === 'js' ? 'javascript' : lang;
+    if (lang === 'html') {
+      lang = 'xml';
     }
 
-    const hlCode = lang
-      ? hl.highlight(lang, code).value
-      : hl.highlightAuto(code).value;
+    const hlCode = lang ? hl.highlight(lang, code).value : hl.highlightAuto(code).value;
     return `<div class="doc-highlight"><pre><code class="${lang ||
-      ""}">${hlCode}</code></pre></div>`;
+      ''}">${hlCode}</code></pre></div>`;
   };
 
   renderer.code = codeRenderer;
