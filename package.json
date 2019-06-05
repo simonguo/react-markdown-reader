@@ -12,6 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/simonguo/react-markdown-reader.git"
   },
+  "files": [
+    "CHANGELOG.md",
+    "lib"
+  ],
   "keywords": [
     "react",
     "webpack",
